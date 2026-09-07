@@ -7,6 +7,7 @@ export interface Product {
   category: string;
   badge: string;
   imageUrl: string;
+  gallery?: string[];
   pros: string[];
   cons: string[];
   affiliateUrl: string;
