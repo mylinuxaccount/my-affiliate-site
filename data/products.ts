@@ -195,4 +195,18 @@ export const products: Product[] = [{
   cons: ['물놀이 전용으로 전자부 사용 시 주의 필요'],
   affiliateUrl: 'https://s.click.aliexpress.com/e/_c3fM1B4h',
   sourcePlatform: 'AliExpress',
+}, {
+  id: 'eu-kr-plug-adapter',
+  title: 'EU 유럽·KR 플러그 여행용 전원 어댑터',
+  subtitle: '미국·한국 플러그를 유럽형 콘센트에 연결하는 여행용 AC 변환 어댑터',
+  price: 1650,
+  originalPrice: 1838,
+  category: '생활·수리',
+  badge: '베스트 세일',
+  imageUrl: '/products/eu-kr-plug-adapter-hero.png',
+  gallery: ['/products/eu-kr-plug-adapter-front.png', '/products/eu-kr-plug-adapter-side.png', '/products/eu-kr-plug-adapter-pair.png', '/products/eu-kr-plug-adapter-socket.png', '/products/eu-kr-plug-adapter-back.png'],
+  pros: ['EU 유럽형 콘센트에 한국·미국 플러그 연결', '4.0mm·4.8mm 핀 규격 이미지 확인 가능', '여행과 해외 출장용으로 휴대 간편'],
+  cons: ['전압을 변환하는 제품이 아니므로 기기 전압을 별도 확인해야 함'],
+  affiliateUrl: 'https://s.click.aliexpress.com/e/_c4srIFG1',
+  sourcePlatform: 'AliExpress',
 }];
