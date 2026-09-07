@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://my-affiliate-site.vercel.app/sitemap.xml',
+    sitemap: 'https://my-affiliate-site-liart-eta.vercel.app/sitemap.xml',
   };
 }
