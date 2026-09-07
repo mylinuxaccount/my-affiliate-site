@@ -1,46 +1,9 @@
-import { Product } from '@/types/product';
-
+import type { Product } from '@/types/product';
 export const products: Product[] = [
-  {
-    id: '1',
-    title: '입문용 가성비 볼락/아징 루어 낚싯대 세트',
-    subtitle: '초보자도 쉽게 다루는 고탄성 탄소 섬유 로드 + 스피닝 릴',
-    price: 48500,
-    originalPrice: 75000,
-    category: '레저/낚시',
-    badge: '가성비 1위',
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&q=80',
-    pros: ['경량 설계로 장시간 사용 시 피로도 적음', '초릿대 감도가 뛰어나 입질 파악 용이'],
-    cons: ['원터치 케이스 미포함'],
-    affiliateUrl: 'https://s.click.aliexpress.com',
-    sourcePlatform: 'AliExpress'
-  },
-  {
-    id: '2',
-    title: 'DDR5 32GB (16GBx2) 데스크탑 고성능 메모리',
-    subtitle: '게이밍 및 영상 편집을 위한 최적의 5600MHz 순정 램',
-    price: 118000,
-    originalPrice: 145000,
-    category: 'PC부품',
-    badge: '에디터 추천',
-    imageUrl: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=500&q=80',
-    pros: ['호환성 높음', '방열판 장착 시 오버클럭 잠재력 우수'],
-    cons: ['RGB 조명 미지원'],
-    affiliateUrl: 'https://link.coupang.com',
-    sourcePlatform: 'Coupang'
-  },
-  {
-    id: '3',
-    title: '초소형 다기능 알루미늄 낚시 플라이어 (합사 가위)',
-    subtitle: '티타늄 코팅 방수 녹방지 루어용 멀티툴',
-    price: 12900,
-    originalPrice: 22000,
-    category: '레저/낚시',
-    badge: '최저가 세일',
-    imageUrl: 'https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=500&q=80',
-    pros: ['합사 라인 깔끔한 절단', '내구성 뛰어난 티타늄 피막'],
-    cons: ['손이 큰 경우 그립감이 다소 작을 수 있음'],
-    affiliateUrl: 'https://s.click.aliexpress.com',
-    sourcePlatform: 'AliExpress'
-  }
+  { id: 'ryzen-5600-kit', title: '라이젠 5 5600 + B550 가성비 PC 세트', subtitle: '게임과 작업을 한 번에 시작하는 국민 조합', price: 179000, originalPrice: 219000, category: 'PC 부품', badge: '가성비 1위', imageUrl: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85', pros: ['FHD 게이밍에 충분한 성능', '업그레이드 여유가 넉넉함', '검증된 호환 조합'], cons: ['내장 그래픽은 미지원'], affiliateUrl: 'https://www.aliexpress.com/item/gear-pick-ryzen.html', sourcePlatform: 'AliExpress' },
+  { id: 'fishing-reel', title: '입문용 스피닝릴 3000번 세트', subtitle: '민물·바다낚시를 모두 커버하는 첫 릴', price: 38900, originalPrice: 59000, category: '낚시·레저', badge: '에디터 추천', imageUrl: 'https://images.unsplash.com/photo-1535090467336-9501f96eef89?auto=format&fit=crop&w=900&q=85', pros: ['초보자도 다루기 쉬운 구조', '합사 라인과 예비 스풀 포함', '부드러운 드랙 성능'], cons: ['대형 어종 전용은 아님'], affiliateUrl: 'https://www.aliexpress.com/item/gear-pick-reel.html', sourcePlatform: 'AliExpress' },
+  { id: 'fishing-rod', title: '휴대용 4절 루어 낚싯대', subtitle: '차에 싣고 다니기 좋은 가벼운 입문 로드', price: 44900, originalPrice: 69900, category: '낚시·레저', badge: '최저가 세일', imageUrl: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=900&q=85', pros: ['접으면 55cm로 휴대 간편', '초보자에게 편한 탄성', '루어·찌낚시 겸용'], cons: ['초대형 루어에는 부족함'], affiliateUrl: 'https://www.aliexpress.com/item/gear-pick-rod.html', sourcePlatform: 'AliExpress' },
+  { id: 'tackle-box', title: '방수 다층 낚시 태클박스', subtitle: '채비와 소품을 한눈에 정리하는 실전 수납함', price: 27900, originalPrice: 39900, category: '낚시·레저', badge: '가성비 1위', imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=85', pros: ['분리형 칸막이로 맞춤 수납', '생활 방수 소재', '어깨끈 포함'], cons: ['대형 릴 수납은 어려움'], affiliateUrl: 'https://www.aliexpress.com/item/gear-pick-tackle.html', sourcePlatform: 'AliExpress' },
+  { id: 'camping-chair', title: '초경량 폴딩 캠핑 체어', subtitle: '차박부터 피크닉까지 매일 쓰는 편안한 의자', price: 34900, originalPrice: 49000, category: '캠핑·레저', badge: '에디터 추천', imageUrl: 'https://images.unsplash.com/photo-1475483768296-6163e08872a1?auto=format&fit=crop&w=900&q=85', pros: ['접으면 트렁크에 쏙 들어감', '튼튼한 알루미늄 프레임', '목받침으로 장시간 편안함'], cons: ['푹신한 쿠션감은 적은 편'], affiliateUrl: 'https://www.aliexpress.com/item/gear-pick-chair.html', sourcePlatform: 'AliExpress' },
+  { id: 'action-camera', title: '4K 손떨림 보정 액션캠 입문 패키지', subtitle: '여행과 레저 순간을 가볍게 기록하는 올인원 구성', price: 89900, originalPrice: 129000, category: '여행·촬영', badge: '최저가 세일', imageUrl: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=900&q=85', pros: ['선명한 4K 영상 촬영', '방수 케이스·마운트 포함', '초보자용 자동 모드 제공'], cons: ['어두운 환경에서는 노이즈가 있음'], affiliateUrl: 'https://www.aliexpress.com/item/gear-pick-actioncam.html', sourcePlatform: 'AliExpress' },
 ];

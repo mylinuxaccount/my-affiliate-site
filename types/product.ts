@@ -10,5 +10,11 @@ export interface Product {
   pros: string[];
   cons: string[];
   affiliateUrl: string;
-  sourcePlatform: 'Coupang' | 'AliExpress';
+  sourcePlatform: 'AliExpress';
+}
+
+export interface FilterState {
+  category: string;
+  searchQuery: string;
+  sortBy: 'popular' | 'priceAsc' | 'latest';
 }

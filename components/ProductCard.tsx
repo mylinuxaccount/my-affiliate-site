@@ -1,39 +1,5 @@
-import React from 'react';
-import { Product } from '@/types/product';
-
-export default function ProductCard({ product }: { product: Product }) {
-  const discountRate = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
-
-  return (
-    <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between">
-      <div>
-        <div className="relative aspect-video bg-gray-100 overflow-hidden">
-          <img src={product.imageUrl} alt={product.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          <span className="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-sm">
-            {product.badge}
-          </span>
-        </div>
-        <div className="p-5">
-          <div className="text-xs text-gray-400 mb-1">{product.category} · {product.sourcePlatform}</div>
-          <h3 className="font-bold text-gray-900 text-lg line-clamp-1">{product.title}</h3>
-          <p className="text-sm text-gray-500 mt-1 line-clamp-2">{product.subtitle}</p>
-          <div className="mt-4 flex items-baseline gap-2">
-            <span className="text-2xl font-extrabold text-blue-600">{product.price.toLocaleString()}원</span>
-            <span className="text-sm text-gray-400 line-through">{product.originalPrice.toLocaleString()}원</span>
-            <span className="text-xs font-bold text-red-500 bg-red-50 px-1.5 py-0.5 rounded">-{discountRate}%</span>
-          </div>
-          <div className="mt-4 space-y-1.5 pt-3 border-t border-gray-50">
-            {product.pros.map((pro, i) => (
-              <div key={i} className="text-xs text-emerald-600 flex items-center gap-1 font-medium">✓ {pro}</div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="p-5 pt-0">
-        <a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored" className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-colors text-sm shadow-sm">
-          최저가 및 할인 혜택 확인하기
-        </a>
-      </div>
-    </div>
-  );
-}
+import { ArrowUpRight, Check, ExternalLink, X } from 'lucide-react';
+import Image from 'next/image';
+import type { Product } from '@/types/product';
+const formatPrice = (price: number) => `${price.toLocaleString('ko-KR')}원`;
+export default function ProductCard({ product }: { product: Product }) { const discount = Math.round((1 - product.price / product.originalPrice) * 100); return <article className="group overflow-hidden rounded-[1.5rem] border border-zinc-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-zinc-300 hover:shadow-xl hover:shadow-zinc-900/10"><div className="relative aspect-[1.35/1] overflow-hidden bg-zinc-100"><Image src={product.imageUrl} alt={product.title} fill unoptimized sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-105" /><div className="absolute left-4 top-4 flex gap-2"><span className="rounded-full bg-[#d9f36b] px-3 py-1.5 text-xs font-black text-zinc-900">{product.badge}</span><span className="rounded-full bg-zinc-950/80 px-3 py-1.5 text-xs font-bold text-white">-{discount}%</span></div><span className="absolute bottom-4 right-4 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-zinc-600 backdrop-blur">{product.sourcePlatform}</span></div><div className="p-5 sm:p-6"><p className="mb-2 text-xs font-bold uppercase tracking-wider text-zinc-400">{product.category}</p><h2 className="text-xl font-black leading-tight tracking-[-0.04em] text-zinc-950">{product.title}</h2><p className="mt-2 text-sm text-zinc-500">{product.subtitle}</p><div className="mt-5 flex items-end gap-2"><span className="text-2xl font-black tracking-[-0.05em]">{formatPrice(product.price)}</span><span className="mb-1 text-sm text-zinc-400 line-through">{formatPrice(product.originalPrice)}</span></div><div className="my-5 grid gap-2 border-y border-zinc-100 py-4 text-sm"><div className="flex gap-2 text-zinc-700"><Check size={17} className="shrink-0 text-emerald-600" />{product.pros[0]}</div><div className="flex gap-2 text-zinc-700"><Check size={17} className="shrink-0 text-emerald-600" />{product.pros[1]}</div><div className="flex gap-2 text-zinc-500"><X size={17} className="shrink-0 text-rose-500" />{product.cons[0]}</div></div><a href={product.affiliateUrl} target="_blank" rel="noopener noreferrer nofollow sponsored" className="flex items-center justify-between rounded-xl bg-zinc-950 px-4 py-3.5 text-sm font-bold text-white transition hover:bg-[#53600e]">알리익스프레스 최저가 확인하기 <ArrowUpRight size={18} /></a><div className="mt-3 flex items-center justify-center gap-1 text-[11px] text-zinc-400"><ExternalLink size={11} /> 알리익스프레스에서 상품 정보 확인</div></div></article>; }

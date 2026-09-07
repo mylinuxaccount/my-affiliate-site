@@ -1,16 +1,5 @@
-import React from 'react';
-
-export default function Header() {
-  return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            GEAR PICK
-          </span>
-          <span className="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">가성비 큐레이션</span>
-        </div>
-      </div>
-    </header>
-  );
-}
+'use client';
+import { Search, Sparkles } from 'lucide-react';
+interface HeaderProps { searchQuery: string; onSearchChange: (value: string) => void; onCategorySelect: (category: string) => void; }
+const categories = ['전체', 'PC 부품', '낚시·레저', '캠핑·레저', '여행·촬영', '운동·건강'];
+export default function Header({ searchQuery, onSearchChange, onCategorySelect }: HeaderProps) { return <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-[#f8f8f5]/90 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center gap-6 px-5 py-4 lg:px-8"><button onClick={() => onCategorySelect('전체')} className="flex shrink-0 items-center gap-2 text-left" aria-label="ALI PICK 홈으로 이동"><span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#d9f36b] text-zinc-950"><Sparkles size={18} strokeWidth={2.5} /></span><span className="text-lg font-black tracking-[-0.05em] text-zinc-950">ALI PICK</span></button><nav className="hidden items-center gap-5 text-sm font-semibold text-zinc-500 lg:flex">{categories.slice(1, 5).map((category) => <button key={category} onClick={() => onCategorySelect(category)} className="transition hover:text-zinc-950">{category}</button>)}</nav><label className="relative ml-auto block w-full max-w-xs"><Search className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" size={17} /><input value={searchQuery} onChange={(event) => onSearchChange(event.target.value)} placeholder="알리익스프레스 상품 검색" className="h-10 w-full rounded-full border border-zinc-200 bg-white pl-10 pr-4 text-sm outline-none transition placeholder:text-zinc-400 focus:border-zinc-950" /></label></div></header>; }
