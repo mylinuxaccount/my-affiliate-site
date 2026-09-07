@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import { products } from '@/data/products';
 import type { FilterState } from '@/types/product';
 
-const categories = ['전체', 'PC 부품', '낚시·레저', '캠핑·레저', '운동·건강'];
+const categories = ['전체', 'PC 부품', '낚시·레저', '캠핑·레저', '운동·건강', '생활·수리'];
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('전체');
