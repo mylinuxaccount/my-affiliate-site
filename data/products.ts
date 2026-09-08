@@ -278,4 +278,18 @@ export const products: Product[] = [{
   cons: ['연결 기기의 USB-C OTG 지원 여부를 확인해야 함'],
   affiliateUrl: 'https://s.click.aliexpress.com/e/_c2ytKmrL',
   sourcePlatform: 'AliExpress',
+}, {
+  id: 'car-glass-hydrophobic-coating',
+  title: '자동차 유리 방수 나노 코팅 스프레이',
+  subtitle: '차량 유리의 오일막과 물때를 줄이는 발수·방수 코팅제',
+  price: 1589,
+  originalPrice: 1785,
+  category: '차량용품',
+  badge: '베스트 세일',
+  imageUrl: '/products/car-glass-hydrophobic-hero.png',
+  gallery: ['/products/car-glass-hydrophobic-windshield.png', '/products/car-glass-hydrophobic-window.png', '/products/car-glass-hydrophobic-mirror.png', '/products/car-glass-hydrophobic-bottles.png', '/products/car-glass-hydrophobic-apply.png'],
+  pros: ['비와 물방울을 튕겨내는 발수 코팅', '자동차 앞유리·측면 유리에 활용', '스프레이 타입으로 간편한 사용'],
+  cons: ['사용 전 유리 표면의 먼지와 오일막을 깨끗이 제거해야 함'],
+  affiliateUrl: 'https://s.click.aliexpress.com/e/_c3O6Xxfx',
+  sourcePlatform: 'AliExpress',
 }];
