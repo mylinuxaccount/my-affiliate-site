@@ -446,4 +446,18 @@ export const products: Product[] = [{
   cons: ['에센셜 오일 사용 가능 여부와 물통 관리 방법을 확인해야 함'],
   affiliateUrl: 'https://s.click.aliexpress.com/e/_c4rAwM9F',
   sourcePlatform: 'AliExpress',
+}, {
+  id: 'tesla-model-yl-floor-trunk-mats',
+  title: 'YZ 테슬라 모델 YL 2026 바닥·트렁크 매트 세트',
+  subtitle: 'LHD·RHD 차량용 TPE 방수·미끄럼 방지 러기지 바닥 라이너',
+  price: 71500,
+  originalPrice: 74453,
+  category: '차량용품',
+  badge: '베스트 세일',
+  imageUrl: 'https://ae-pic-a1.aliexpress-media.com/kf/S7240f1ac2635471fab56fc0924ea5c5dh.jpg',
+  gallery: ['https://ae-pic-a1.aliexpress-media.com/kf/S68cc81ec6ee94038bfffd27558e987d1B.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S8e409e0fa6234e4c802d3a490468a8a90.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S3f0ccecfb5624e0fa399c0b71ef55549R.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S97033a814fa04ef38f9e5ab3f6ab2948z.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S707cc5ccecf34184b4a4ffadb6136cfde.jpg'],
+  pros: ['테슬라 모델 YL 2026 전용 설계', 'TPE 소재의 방수·오염 방지 구조', '바닥과 트렁크를 함께 보호하는 세트 구성'],
+  cons: ['차량의 연식과 LHD·RHD 방향을 구매 전 확인해야 함'],
+  affiliateUrl: 'https://s.click.aliexpress.com/e/_c3qtEvYz',
+  sourcePlatform: 'AliExpress',
 }];
