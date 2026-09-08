@@ -432,4 +432,18 @@ export const products: Product[] = [{
   cons: ['날이 있는 도구이므로 사용과 보관 시 안전에 주의해야 함'],
   affiliateUrl: 'https://s.click.aliexpress.com/e/_c4TnJjNB',
   sourcePlatform: 'AliExpress',
+}, {
+  id: 'flame-essential-oil-diffuser',
+  title: '불꽃 에센셜 오일 디퓨저 3D 벽난로 가습기',
+  subtitle: '리모컨으로 조절하는 다채로운 불꽃 아로마테라피 무드 가습기',
+  price: 20850,
+  originalPrice: 41700,
+  category: '데스크테리어',
+  badge: '베스트 세일',
+  imageUrl: 'https://ae-pic-a1.aliexpress-media.com/kf/S81eadfa486684d78bfd97a65821287f34.jpg',
+  gallery: ['https://ae-pic-a1.aliexpress-media.com/kf/S37ad519a0fb4444ab14191d3ffcc02b3L.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/Sb12c65388d8f4426a8f486d0d0979afd2.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S8e96784877c84ea982187cb425361f19E.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S9caad83a54c54d5d94943fec775ab73cF.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S71973b7f801c4f90a67a1d4f2c0b06bbi.jpg'],
+  pros: ['3D 불꽃 벽난로 효과로 따뜻한 무드 연출', '에센셜 오일 아로마테라피와 가습 기능', '리모컨으로 조명과 작동을 편리하게 조절'],
+  cons: ['에센셜 오일 사용 가능 여부와 물통 관리 방법을 확인해야 함'],
+  affiliateUrl: 'https://s.click.aliexpress.com/e/_c4rAwM9F',
+  sourcePlatform: 'AliExpress',
 }];
