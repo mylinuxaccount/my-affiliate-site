@@ -460,4 +460,18 @@ export const products: Product[] = [{
   cons: ['차량의 연식과 LHD·RHD 방향을 구매 전 확인해야 함'],
   affiliateUrl: 'https://s.click.aliexpress.com/e/_c3qtEvYz',
   sourcePlatform: 'AliExpress',
+}, {
+  id: 'firebat-f1-ryzen-7-mini-pc',
+  title: 'FIREBAT F1 Ryzen 7 H255 미니 PC',
+  subtitle: 'LPDDR5 16GB·512GB SSD·WiFi 6를 갖춘 Windows 11 휴대용 데스크탑',
+  price: 716958,
+  originalPrice: 735941,
+  category: 'PC 부품',
+  badge: '베스트 세일',
+  imageUrl: 'https://ae-pic-a1.aliexpress-media.com/kf/S6b39c9939e734658913fd8ace666fba15.jpg',
+  gallery: ['https://ae-pic-a1.aliexpress-media.com/kf/S61b055e6fdd8472a91c6a49bccd0cec3q.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S865a62c625d44060a7cb776fe25efb0d8.png', 'https://ae-pic-a1.aliexpress-media.com/kf/Sc1926336e1c141a494de7caf206ae765z.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S1e7e2526733c46b6afbd887f2c2adf0dP.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S36fd0f9eee054eb5910165173d985283k.jpg'],
+  pros: ['Ryzen 7 H255와 LPDDR5 16GB 메모리 구성', '512GB SSD와 Windows 11 기본 구성', 'WiFi 6·블루투스 5.2를 지원하는 휴대용 데스크탑'],
+  cons: ['실제 성능과 확장 가능 여부는 판매 옵션과 사용 환경을 확인해야 함'],
+  affiliateUrl: 'https://s.click.aliexpress.com/e/_c2xupcWd',
+  sourcePlatform: 'AliExpress',
 }];
