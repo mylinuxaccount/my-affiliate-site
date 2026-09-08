@@ -418,4 +418,18 @@ export const products: Product[] = [{
   cons: ['옵션별 SSD 용량과 메모리 구성을 구매 전 확인해야 함'],
   affiliateUrl: 'https://s.click.aliexpress.com/e/_c4molPtf',
   sourcePlatform: 'AliExpress',
+}, {
+  id: 'magnetic-package-opening-knife',
+  title: '마그네틱 다기능 휴대용 택배 개봉 칼',
+  subtitle: '접이식 자동 잠금과 반동 구조를 갖춘 컴팩트 아트 나이프 도구',
+  price: 1290,
+  originalPrice: 1395,
+  category: '생활·수리',
+  badge: '베스트 세일',
+  imageUrl: 'https://ae-pic-a1.aliexpress-media.com/kf/S9577b40593cc4431bf5ac013aa4fd004I.jpg',
+  gallery: ['https://ae-pic-a1.aliexpress-media.com/kf/S9d0dca8c8a7349d0addeedb12efd10e51.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S3f02918bf3a543b5839f13712fff4b8as.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/Scff750535a6741e785786d8900705c862.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/Sab2729990e6041fd8bc6507173a7b1e80.jpg', 'https://ae-pic-a1.aliexpress-media.com/kf/S45eecee4a8c24fdc976061c75b14d738b.jpg'],
+  pros: ['택배 상자·포장재를 빠르게 개봉하는 휴대용 도구', '접이식 구조와 자동 잠금으로 보관이 간편', '자석 부착이 가능한 컴팩트 디자인'],
+  cons: ['날이 있는 도구이므로 사용과 보관 시 안전에 주의해야 함'],
+  affiliateUrl: 'https://s.click.aliexpress.com/e/_c4TnJjNB',
+  sourcePlatform: 'AliExpress',
 }];
